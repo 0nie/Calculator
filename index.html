@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/Calculator_512.webp">
+</head>
+
+<body>
+
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button onclick="memoryClear()" data-mc>MC</button>
+        <button onclick="memoryAdd()" data-m+>M+</button>
+        <button onclick="memorySubtract()" data-m->M-</button>
+        <button onclick="memoryRecall()" data-mr>MR</button>
+        <button onclick="clearDisplay()" data-all-clear>AC</button>
+        <button onclick="deleteLast()" data-delete>DEL</button>
+        <button onclick="chooseOperation('-')" data-operation>-</button>
+        <button onclick="chooseOperation('*')" data-operation>*</button>
+        <button onclick="appendNumber(7)" data-number>7</button>
+        <button onclick="appendNumber(8)" data-number>8</button>
+        <button onclick="appendNumber(9)" data-number>9</button>
+        <button onclick="chooseOperation('÷')" data-operation>÷</button>
+        <button onclick="appendNumber(4)" data-number>4</button>
+        <button onclick="appendNumber(5)" data-number>5</button>
+        <button onclick="appendNumber(6)" data-number>6</button>
+        <button onclick="chooseOperation('+')" data-operation>+</button>
+        <button onclick="appendNumber(1)" data-number>1</button>
+        <button onclick="appendNumber(2)" data-number>2</button>
+        <button onclick="appendNumber(3)" data-number>3</button>
+        <button onclick="appendNumber('.')">.</button>
+        <button onclick="percentage()" data-percentage>%</button>
+        <button onclick="appendNumber(0)" data-number>0</button>
+        <button onclick="sqrt()" data-root>√</button>
+        <button onclick="toggleSign()">+/-</button> <!-- Add the +/- button -->
+        <button onclick="compute()"  class="span-two"data-equals>=</button>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
